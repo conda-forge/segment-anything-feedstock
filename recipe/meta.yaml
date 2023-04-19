@@ -24,7 +24,7 @@ requirements:
     - torchvision >=0.8
     - opencv
     - pycocotools
-    - matplotlib
+    - matplotlib-base
     - onnxruntime
     - onnx
 
