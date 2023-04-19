@@ -22,6 +22,11 @@ requirements:
     - python >=3.8
     - pytorch >=1.7
     - torchvision >=0.8
+    - opencv
+    - pycocotools
+    - matplotlib
+    - onnxruntime
+    - onnx
 
 test:
   imports:
