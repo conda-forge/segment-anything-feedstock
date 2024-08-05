@@ -1,18 +1,18 @@
 {% set name = "segment-anything" %}
-{% set version = "1.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/segment-anything-py/segment-anything-py-{{ version }}.tar.gz
-  sha256: deea07eeb9f473015472a4bb0d196c327356b7d7224e0179da6a631f5ad3b707
+  url: https://pypi.io/packages/source/{{ name[0] }}/segment-anything-py/segment_anything_py-{{ version }}.tar.gz
+  sha256: 91d7d65804dd3a9030e26cd269991c4d24099008fb82e5ae98c9f6d9163b4b75
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
